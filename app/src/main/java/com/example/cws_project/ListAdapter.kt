@@ -25,6 +25,7 @@ class ListAdapter(val items:ArrayList<String>): RecyclerView.Adapter<ListAdapter
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListAdapter.ViewHolder {
         val v=LayoutInflater.from(parent.context).inflate(R.layout.row,parent,false)
+        return ViewHolder(v)
     }
 
     override fun onBindViewHolder(holder: ListAdapter.ViewHolder, position: Int) {

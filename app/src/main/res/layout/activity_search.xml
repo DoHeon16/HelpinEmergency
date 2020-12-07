@@ -34,4 +34,18 @@
             android:text="리스트"
             android:textSize="30sp" />
     </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/fragment"
+        android:layout_width="match_parent"
+        android:layout_height="438dp">
+
+    </FrameLayout>
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="66dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
 </LinearLayout>
