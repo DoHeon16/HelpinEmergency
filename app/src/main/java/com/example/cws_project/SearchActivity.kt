@@ -27,31 +27,32 @@ class SearchActivity : AppCompatActivity() {
             startActivity(i)
             finish()
         }
-        map.isChecked=true //지도 기본 체크
+        //map.isChecked=true //지도 기본 체크
         val fragment=supportFragmentManager.beginTransaction()
         fragment.addToBackStack(null)
-        fragment.replace(R.id.fragment,mapFragment)
-        radiogroup.setOnCheckedChangeListener { group, checkedId ->
-            when(checkedId){
-                R.id.map->{
-                    //kind에 맞는 map에 해당하는 fragment로 보여주기
-                    if(!mapFragment.isVisible){
-                        val fragment=supportFragmentManager.beginTransaction()
-                        fragment.addToBackStack(null)
-                        fragment.replace(R.id.fragment,mapFragment)
-                        fragment.commit()
-                    }
-                }
-                R.id.list->{
-                    //kind에 맞는 list에 해당하는 fragment로 보여주기
-                    if(!selfFragment.isVisible){
-                        val fragment=supportFragmentManager.beginTransaction()
-                        fragment.addToBackStack(null)
-                        fragment.replace(R.id.fragment,selfFragment)
-                        fragment.commit()
-                    }
-                }
-            }
-        }
+        fragment.replace(R.id.fragment,selfFragment)
+        fragment.commit()
+//        radiogroup.setOnCheckedChangeListener { group, checkedId ->
+//            when(checkedId){
+//                R.id.map->{
+//                    //kind에 맞는 map에 해당하는 fragment로 보여주기
+//                    if(!mapFragment.isVisible){
+//                        val fragment=supportFragmentManager.beginTransaction()
+//                        fragment.addToBackStack(null)
+//                        fragment.replace(R.id.fragment,mapFragment)
+//                        fragment.commit()
+//                    }
+//                }
+//                R.id.list->{
+//                    //kind에 맞는 list에 해당하는 fragment로 보여주기
+//                    if(!selfFragment.isVisible){
+//                        val fragment=supportFragmentManager.beginTransaction()
+//                        fragment.addToBackStack(null)
+//                        fragment.replace(R.id.fragment,selfFragment)
+//                        fragment.commit()
+//                    }
+//                }
+//            }
+//        }
     }
 }
