@@ -8,12 +8,15 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="5dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginVertical="10dp"
+        android:layout_weight="1"
+        android:background="#DBF9FD"
         android:fontFamily="@font/dxgodicb"
         android:paddingHorizontal="15dp"
-        android:paddingVertical="5dp"
-        android:text="TextView"
+        android:paddingVertical="10dp"
+        android:text="bookmark"
         android:textAlignment="textStart"
-        android:textSize="20sp" />
+        android:textColor="#000000"
+        android:textSize="24sp" />
 </LinearLayout>

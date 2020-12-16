@@ -2,9 +2,10 @@ package com.example.cws_project
 
 import java.io.Serializable
 
-class HospitalInfo :Serializable{
+class HospitalInfo:Serializable{
+
     var b_dutyName="" //병원명
-    var b_detyTel1= ""//대표전화
+    var b_dutyTel1= ""//대표전화
     var b_dutyAddr= ""//주소
     var b_dutyTime1c= ""//월-일,공유일 종료시간
     var b_dutyTime2c=""
@@ -25,9 +26,11 @@ class HospitalInfo :Serializable{
     var b_wgs84Lon="" //병원경도
     var b_wgs84Lat= ""//병원위도
     var b_dutyDivNam=""
+    var b_city=""
+    var b_district=""
 
     fun getDutyName():String{        return b_dutyName    }
-    fun getDutyTel1():String{        return b_detyTel1    }
+    fun getDutyTel1():String{        return b_dutyTel1    }
     fun getDutyAddr():String{        return b_dutyAddr    }
     fun getDutyTime1c():String{        return b_dutyTime1c    }
     fun getDutyTime2c():String{        return b_dutyTime2c    }
@@ -49,8 +52,10 @@ class HospitalInfo :Serializable{
     fun getWgs84Lat():String{        return b_wgs84Lat    }
     fun getDutyDivNam():String{return  b_dutyDivNam}
 
+    fun setCity(s:String){b_city=s}
+    fun setDistrict(s:String){b_district=s}
     fun setDutyName(s:String){        b_dutyName=s  }
-    fun setDutyTel1(s:String){        b_detyTel1  =s  }
+    fun setDutyTel1(s:String){        b_dutyTel1  =s  }
     fun setDutyAddr(s:String){         b_dutyAddr   =s }
     fun setDutyDivNam(s:String){ b_dutyDivNam=s }
     fun setDutyTime1c(s:String){         b_dutyTime1c=s    }

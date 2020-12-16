@@ -7,18 +7,25 @@
     android:orientation="vertical"
     tools:context=".BookmarkActivity">
 
+    <androidx.viewpager.widget.ViewPager
+        android:layout_weight="9"
+        android:id="@+id/VP"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </androidx.viewpager.widget.ViewPager>
+
+
     <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tablayout"
+        android:id="@+id/tabs_main"
         android:layout_width="match_parent"
-        android:layout_height="77dp" />
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        app:layout_constraintTop_toTopOf="parent"
 
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/viewpager"
-        android:layout_width="match_parent"
-        android:layout_height="473dp">
-
-    </androidx.viewpager2.widget.ViewPager2>
-
+        app:tabBackground="@drawable/ic_launcher_background"
+        app:tabMode="fixed"
+        tools:layout_editor_absoluteX="0dp"></com.google.android.material.tabs.TabLayout>
     <ImageButton
         android:id="@+id/back"
         android:layout_width="66dp"
