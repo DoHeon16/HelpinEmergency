@@ -13,7 +13,8 @@
 .externalNativeBuild
 .cxx
 /app/google-services.json
-/app/src/main/AndroidManifest
+/app/src/main/AndroidManifest.xml
 /app/src/main/java/com/example/cws_project/RequestBookmark1.kt
 /app/src/main/java/com/example/cws_project/RequestEmergency.kt
 /app/src/main/java/com/example/cws_project/RequestPharmacy.kt
+/app/src/main/java/com/example/cws_project/RequestHospital.kt
